@@ -216,9 +216,9 @@ spring.session.redis.namespace=spring:session
 - サービスの作成
 ``` bash
 # redisサービスの確認(pcfなら、p-redis, pwsならrediscloud)
-cf m
+cf m -s rediscloud
 # redisサービスの作成
-cf create-service myredis-<ユーザ名> サービス名 プラン名
+cf create-service サービス名 プラン名 myredis-<ユーザ名> 
 ```
 
 - manifest.ymlの作成  
