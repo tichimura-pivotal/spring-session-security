@@ -15,7 +15,7 @@
 - start.spring.ioから作成
 
   Security, Web, Redisを選択
-![Spring Initializer ](../resources/start.spring.io.spring-session-security.png)
+![Spring Initializer ](./resources/start.spring.io.spring-session-security.png)
 
 ## 3. コードの編集
 
@@ -178,7 +178,7 @@ public class SessionConfig extends WebSecurityConfigurerAdapter {
   - 画面上で、右クリック
   - inspectを選択
 
-  ![](../resources/spring-session-security-inspect.png)
+  ![](./resources/spring-session-security-inspect.png)
 
   - Cookieの情報を確認
 
@@ -241,7 +241,7 @@ cf push springsecurity-demo-ユーザ名 -f manifest.yml
     - プロジェクト名を右クリック
     - Deploy and Run ONから、ターゲットとなるPCF環境を選択
     - manifestの内容を確認して、OKをクリック
-    ![](../resources/spring-session-security-cfpush.png)
+    ![](./resources/spring-session-security-cfpush.png)
 
 
 - ブラウザで確認
@@ -254,7 +254,7 @@ cf push springsecurity-demo-ユーザ名 -f manifest.yml
   - 画面上で、右クリック
   - inspectを選択
 
-  ![](../resources/spring-session-security-inspect.png)
+  ![](./resources/spring-session-security-inspect.png)
 
   - Cookieの情報を確認
 
