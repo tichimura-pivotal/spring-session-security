@@ -191,11 +191,13 @@ public class SessionConfig extends WebSecurityConfigurerAdapter {
 ## 5. PCF(PWS)での実行
 
 - application-cloud.propertiesの編集
+> この後に、`cf create-service`にてmyredis-<ユーザ名>を作成する前提です
+
 ``` yaml
 spring.session.store-type=redis
-spring.redis.host=${vcap.services.myredisdemo.credentials.hostname}
-spring.redis.password=${vcap.services.myredisdemo.credentials.password}
-spring.redis.port=${vcap.services.myredisdemo.credentials.port}
+spring.redis.host=${vcap.services.myredis-<ユーザ名>.credentials.hostname}
+spring.redis.password=${vcap.services.myredis-<ユーザ名>.credentials.password}
+spring.redis.port=${vcap.services.myredis-<ユーザ名>.credentials.port}
 spring.session.redis.flush-mode=on-save
 spring.session.redis.namespace=spring:session
 ```
